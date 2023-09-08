@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bonnie - Five Nights at Freddy's</title>
+    <link rel="icon" type="image/png" href="imagen_2023-08-11_142640075-removebg-preview.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <div id="text">
+            <h1 onmouseover="playNeonSound()" onmouseout="stopNeonSound()">BONNIE - FIVE NIGHTS AT FREDDY'S</h1>
+            <p>Un asombrosa robot robótico programable inspirada en el mundo de Five Nights at Freddy's.</p>
+            <p>Diseñada con impresión 3D y controlada por Arduino, nuestra creación puede realizar expresiones faciales realistas.</p>
+            <p>Un proyecto que fusiona aprendizaje, tecnología y diversión.</p>
+        </div>
+        <img id="bonnie-image" src="imagen_2023-08-11_142640075-removebg-preview.png" alt="Bonnie, el animatrónico en el cuerpo" usemap="#bonnie-map" onclick="flashlightClicked()">
+        <map name="bonnie-map">
+            <area shape="circle" coords="50%, 55%, RADIO" onclick="playSound()">
+        </map>
+    </div>
+    <div id="flashlight" style="cursor: url(linterna.jpg), auto;"></div>
+    <audio id="nariz-audio" src="nariz.mp3" preload="auto"></audio>
+    <audio id="neon-audio" src="neon.mp3" preload="auto"></audio>
+    <button id="follow-button" onclick="toggleLights()">💡</button>
+    <script src="script.js"></script>
+
+
+    <h1><span>Cabeza bonnie</span></h1>
+
+    <div class="img-gallery">
+        <img src="ojo.jpeg" onclick="openFulImg(this.src)" alt="">
+        <img src="boca.jpeg" onclick="openFulImg(this.src)" alt="">
+        <img src="cara1.jpeg" onclick="openFulImg(this.src)" alt="">
+        <img src="patras.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="manidbula.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="rawr.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="mandibulas.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="cabeza.jpeg" onclick="openFulImg(this.src)" alt="">
+    </div>
+    <div class="ful-img" id="fulImgBox">
+        <img src="imgs/1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <h1><span>Endo-Esqueleto</span></h1>
+
+    <div class="img-gallery">
+        <img src="brazo.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="pi.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="a.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="cuer.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="po.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="s.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="cal.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="zon.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="bon (1).gif" onclick="openFulImg(this.src)" alt="">
+    </div>
+
+    
+</body>
+</html>
