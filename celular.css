@@ -330,16 +330,5 @@ h1::before{
     max-width: 600px;
 }
 
-@media screen and (max-width:400px){
-    h1{
-        text-decoration: underline;
-    }
-    h1::before{
-        display: none;
-    }
-    h1 span{
-        padding: 0;
-    }
-}
 
 }

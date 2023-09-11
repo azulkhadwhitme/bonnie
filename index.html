@@ -8,27 +8,21 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="computadora.css">
     <link rel="stylesheet" href="celular.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="content">
         <div id="text">
             <h1 onmouseover="playNeonSound()" onmouseout="stopNeonSound()">BONNIE - FIVE NIGHTS AT FREDDY'S</h1>
-            <p>Un asombrosa robot robótico programable inspirada en el mundo de Five Nights at Freddy's.</p>
-            <p>Diseñada con impresión 3D y controlada por Arduino, nuestra creación puede realizar expresiones faciales realistas.</p>
-            <p>Un proyecto que fusiona aprendizaje, tecnología y diversión.</p>
+            <p>Un asombroso robot Animatronico programable inspirado en el mundo de Five Nights at Freddy's.
+                Fabricado con impresión 3D y controlado por Arduino.
+                Un proyecto que fusiona aprendizaje, tecnología y diversión.
+            </p>
         </div>
-        <img id="bonnie-image" src="imagen_2023-08-11_142640075-removebg-preview.png" alt="Bonnie, el animatrónico en el cuerpo" usemap="#bonnie-map" onclick="flashlightClicked()">
-        <map name="bonnie-map">
-            <area shape="circle" coords="50%, 55%, RADIO" onclick="playSound()">
-        </map>
-    </div>
-    <div id="flashlight" style="cursor: url(linterna.jpg), auto;"></div>
+        </div>
     <audio id="nariz-audio" src="nariz.mp3" preload="auto"></audio>
     <audio id="neon-audio" src="neon.mp3" preload="auto"></audio>
-    <button id="follow-button" onclick="toggleLights()">💡</button>
-    <script src="script.js"></script>
-
-
+   
     <h1><span>Cabeza bonnie</span></h1>
 
     <div class="img-gallery">
@@ -41,10 +35,7 @@
         <img src="mandibulas.jpg" onclick="openFulImg(this.src)" alt="">
         <img src="cabeza.jpeg" onclick="openFulImg(this.src)" alt="">
     </div>
-    <div class="ful-img" id="fulImgBox">
-        <img src="imgs/1.jpg" id="fulImg" alt="">
-        <span onclick="closeImg()">X</span>
-    </div>
+
 
     <h1><span>Endo-Esqueleto</span></h1>
 
@@ -57,9 +48,21 @@
         <img src="s.jpg" onclick="openFulImg(this.src)" alt="">
         <img src="cal.jpg" onclick="openFulImg(this.src)" alt="">
         <img src="zon.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="bon (1).gif" onclick="openFulImg(this.src)" alt="">
+    </div>
+    <div class="container">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
     </div>
 
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
